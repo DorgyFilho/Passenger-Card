@@ -1,5 +1,3 @@
-#This version works only Adding/Paying tickets. This project will be developed according to time.
-
 class Vale:
 
     def __init__(self, numberCard, credit=0):
@@ -13,7 +11,6 @@ class Vale:
         if self._credit >= 0:
             add = int(input('Credit: '))
             self._credit += add
-        return f' You added ${add}. Currently, you have ${self._credit}'
     
     def verify(self):
         return f'Your Passenger Card: {self._numberCard}\nYour Credit: ${self._credit}'
